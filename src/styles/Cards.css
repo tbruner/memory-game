@@ -1,0 +1,5 @@
+.cards {
+  display: grid;
+  grid-template: 2 / 6;
+  gap: 18px;
+}
