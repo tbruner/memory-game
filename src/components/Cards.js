@@ -56,10 +56,10 @@ function Cards({ cards, updateGame }) {
   return (
     <div className='cards'>
       {cards.map((bird, index) => (
-        <div className='card' key={index}>
+        <button className='card' key={index} onClick={updateGame} value={bird.name}>
           <img src={checkBird(bird)} alt={bird.name} />
           <p className='card-title'>{bird.name}</p>
-        </div>
+        </button>
       ))}
     </div>
   );

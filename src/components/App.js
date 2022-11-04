@@ -57,8 +57,35 @@ function App() {
     }
   ]);
 
-  function updateGame(e) {
+  function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
 
+  function updateGame(e) {
+    let currentBirdIndex = null
+    for(let i=0; i<cards.length; ++i) {
+      if(e.currentTarget.value === cards[i].name) {
+        currentBirdIndex = i
+      }
+    }
+    
+    const temp = [...cards]
+    if(cards[currentBirdIndex].used) {
+      setScore(0)
+      for(let i=0; i<cards.length; ++i) {
+        temp[i].used = false
+      }
+      setCards(temp)
+    }
+    else {
+      const newScore = score + 1
+      setScore(newScore)
+      if(newScore > best) setBest(newScore)
+      temp[currentBirdIndex].used = true
+      setCards(temp)
+    }
+
+    setCards(shuffle(cards));
   }
 
   return (
