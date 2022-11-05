@@ -58,7 +58,12 @@ function App() {
   ]);
 
   function shuffle(array) {
-    return array.sort(() => Math.random() - 0.5);
+    const temp = [...array];
+    for(let i = array.length - 1; i>0; --i) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [temp[i], temp[j]] = [temp[j], temp[i]];
+    }
+    return temp
   }
 
   function updateGame(e) {
