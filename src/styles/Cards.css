@@ -9,7 +9,16 @@
 .card {
   padding: 14px;
   border-radius: 14px;
-  background-color: #579047;
+  background-color: hsl(107, 34%, 42%);
+  border: none;
+  color: hsl(56, 78%, 72%);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: hsl(107, 34%, 26%);
 }
 
 .card img {

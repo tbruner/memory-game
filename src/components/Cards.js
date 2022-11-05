@@ -15,40 +15,40 @@ import dove from '../images/mourning-dove.jpg';
 
 function Cards({ cards, updateGame }) {
   function checkBird(bird) {
-    if(bird.name === 'crow') {
+    if(bird.name === 'Crow') {
       return crow
     }
-    else if(bird.name === 'blueJay') {
+    else if(bird.name === 'Blue Jay') {
       return blueJay
     }
-    else if(bird.name === 'robin') {
+    else if(bird.name === 'Robin') {
       return robin
     }
-    else if(bird.name === 'wigeon') {
+    else if(bird.name === 'Wigeon') {
       return wigeon
     }
-    else if(bird.name === 'hawk') {
+    else if(bird.name === 'Hawk') {
       return hawk
     }
-    else if(bird.name === 'wren') {
+    else if(bird.name === 'Wren') {
       return wren
     }
-    else if(bird.name === 'woodpecker') {
+    else if(bird.name === 'Woodpecker') {
       return woodpecker
     }
-    else if(bird.name === 'cardinal') {
+    else if(bird.name === 'Cardinal') {
       return cardinal
     }
-    else if(bird.name === 'blackbird') {
+    else if(bird.name === 'Blackbird') {
       return blackbird
     }
-    else if(bird.name === 'nuthatch') {
+    else if(bird.name === 'Nuthatch') {
       return nuthatch
     }     
-    else if(bird.name === 'warbler') {
+    else if(bird.name === 'Warbler') {
       return warbler
     }
-    else if(bird.name === 'dove') {
+    else if(bird.name === 'Dove') {
       return dove
     }
   }

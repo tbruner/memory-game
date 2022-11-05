@@ -8,51 +8,51 @@ function App() {
   const [best, setBest] = useState(0);
   const [cards, setCards] = useState([
     {
-      name: 'crow',
+      name: 'Crow',
       used: false
     },
     {
-      name: 'robin',
+      name: 'Robin',
       used: false
     },
     {
-      name: 'wigeon',
+      name: 'Wigeon',
       used: false
     },
     {
-      name: 'blueJay',
+      name: 'Blue Jay',
       used: false
     },
     {
-      name: 'hawk',
+      name: 'Hawk',
       used: false
     },
     {
-      name: 'wren',
+      name: 'Wren',
       used: false
     },
     {
-      name: 'woodpecker',
+      name: 'Woodpecker',
       used: false
     },
     {
-      name: 'cardinal',
+      name: 'Cardinal',
       used: false
     },
     {
-      name: 'blackbird',
+      name: 'Blackbird',
       used: false
     },
     {
-      name: 'nuthatch',
+      name: 'Nuthatch',
       used: false
     },
     {
-      name: 'warbler',
+      name: 'Warbler',
       used: false
     },
     {
-      name: 'dove',
+      name: 'Dove',
       used: false
     }
   ]);
