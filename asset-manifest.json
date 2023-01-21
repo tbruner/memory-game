@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.8d1ff8b4.css",
+    "main.js": "/memory-game/static/js/main.2275964c.js",
+    "static/media/american-robin.jpg": "/memory-game/static/media/american-robin.ee11776e3e82da739b74.jpg",
+    "static/media/yellow-rumped-warbler.jpg": "/memory-game/static/media/yellow-rumped-warbler.dfc24d7557b47406a385.jpg",
+    "static/media/coopers-hawk.jpg": "/memory-game/static/media/coopers-hawk.265a44df8881a7536b2a.jpg",
+    "static/media/northern-cardinal.jpg": "/memory-game/static/media/northern-cardinal.fdec2fc3be53a6bb9cba.jpg",
+    "static/media/white-breasted-nuthatch.jpg": "/memory-game/static/media/white-breasted-nuthatch.4dc8b93d7b43b8a2b35e.jpg",
+    "static/media/american-crow.jpg": "/memory-game/static/media/american-crow.ae05738a6d2b10846841.jpg",
+    "static/media/hairy-woodpecker.jpg": "/memory-game/static/media/hairy-woodpecker.77b90375fe7bb249f59a.jpg",
+    "static/media/carolina-wren.jpg": "/memory-game/static/media/carolina-wren.d5682c841b738177b7a9.jpg",
+    "static/media/red-winged-blackbird.jpg": "/memory-game/static/media/red-winged-blackbird.371d10ad36f89e4ffc5b.jpg",
+    "static/media/mourning-dove.jpg": "/memory-game/static/media/mourning-dove.aee6fa1ccb2a8dd6e189.jpg",
+    "static/media/american-wigeon.jpg": "/memory-game/static/media/american-wigeon.f81f9b0de363379665ae.jpg",
+    "static/media/blue-jay.jpg": "/memory-game/static/media/blue-jay.658f5c2eb1d4bd4357ea.jpg",
+    "index.html": "/memory-game/index.html",
+    "main.8d1ff8b4.css.map": "/memory-game/static/css/main.8d1ff8b4.css.map",
+    "main.2275964c.js.map": "/memory-game/static/js/main.2275964c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d1ff8b4.css",
+    "static/js/main.2275964c.js"
+  ]
+}
