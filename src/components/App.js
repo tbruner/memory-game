@@ -1,93 +1,92 @@
-import { useState } from 'react';
-import '../styles/App.css';
-import Cards from './Cards.js';
-import Score from './Score.js';
+import { useState } from "react";
+import "../styles/App.css";
+import Cards from "./Cards.js";
+import Score from "./Score.js";
 
 function App() {
   const [score, setScore] = useState(0);
   const [best, setBest] = useState(0);
   const [cards, setCards] = useState([
     {
-      name: 'Crow',
-      used: false
+      name: "Crow",
+      used: false,
     },
     {
-      name: 'Robin',
-      used: false
+      name: "Robin",
+      used: false,
     },
     {
-      name: 'Wigeon',
-      used: false
+      name: "Wigeon",
+      used: false,
     },
     {
-      name: 'Blue Jay',
-      used: false
+      name: "Blue Jay",
+      used: false,
     },
     {
-      name: 'Hawk',
-      used: false
+      name: "Hawk",
+      used: false,
     },
     {
-      name: 'Wren',
-      used: false
+      name: "Wren",
+      used: false,
     },
     {
-      name: 'Woodpecker',
-      used: false
+      name: "Woodpecker",
+      used: false,
     },
     {
-      name: 'Cardinal',
-      used: false
+      name: "Cardinal",
+      used: false,
     },
     {
-      name: 'Blackbird',
-      used: false
+      name: "Blackbird",
+      used: false,
     },
     {
-      name: 'Nuthatch',
-      used: false
+      name: "Nuthatch",
+      used: false,
     },
     {
-      name: 'Warbler',
-      used: false
+      name: "Warbler",
+      used: false,
     },
     {
-      name: 'Dove',
-      used: false
-    }
+      name: "Dove",
+      used: false,
+    },
   ]);
 
   function shuffle(array) {
     const temp = [...array];
-    for(let i = array.length - 1; i>0; --i) {
+    for (let i = array.length - 1; i > 0; --i) {
       let j = Math.floor(Math.random() * (i + 1));
       [temp[i], temp[j]] = [temp[j], temp[i]];
     }
-    return temp
+    return temp;
   }
 
   function updateGame(e) {
-    let currentBirdIndex = null
-    for(let i=0; i<cards.length; ++i) {
-      if(e.currentTarget.value === cards[i].name) {
-        currentBirdIndex = i
+    let currentBirdIndex = null;
+    for (let i = 0; i < cards.length; ++i) {
+      if (e.currentTarget.value === cards[i].name) {
+        currentBirdIndex = i;
       }
     }
-    
-    const temp = [...cards]
-    if(cards[currentBirdIndex].used) {
-      setScore(0)
-      for(let i=0; i<cards.length; ++i) {
-        temp[i].used = false
+
+    const temp = [...cards];
+    if (cards[currentBirdIndex].used) {
+      setScore(0);
+      for (let i = 0; i < cards.length; ++i) {
+        temp[i].used = false;
       }
-      setCards(temp)
-    }
-    else {
-      const newScore = score + 1
-      setScore(newScore)
-      if(newScore > best) setBest(newScore)
-      temp[currentBirdIndex].used = true
-      setCards(temp)
+      setCards(temp);
+    } else {
+      const newScore = score + 1;
+      setScore(newScore);
+      if (newScore > best) setBest(newScore);
+      temp[currentBirdIndex].used = true;
+      setCards(temp);
     }
 
     setCards(shuffle(cards));
@@ -97,18 +96,15 @@ function App() {
     <div className="App">
       <header>
         <div className="title-card">
-          <h1 className='title'>Birds Memory Game</h1>
-          <p className='description'>Get points by clicking on an image, but don't click the same image twice!</p>
+          <h1 className="title">Birds Memory Game</h1>
+          <p className="description">
+            Get points by clicking on an image, but don't click the same image
+            twice!
+          </p>
         </div>
-        <Score
-          score={score}
-          best={best}
-        />
+        <Score score={score} best={best} />
       </header>
-      <Cards
-        updateGame={updateGame}
-        cards={cards}
-      />
+      <Cards updateGame={updateGame} cards={cards} />
     </div>
   );
 }
